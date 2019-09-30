@@ -1,9 +1,11 @@
 import sys
 import zmq
 import time
+import os
 print("Loading OpenCV...")
 from imutils.video import VideoStream
 import cv2
+os.popen('~/send_telegram.sh "launching camera server"')
 # import matplotlib.pyplot as plt
 import numpy as np
 # import robot_io as io 
